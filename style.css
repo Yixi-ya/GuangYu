@@ -1,0 +1,454 @@
+/* 本地字体(暂用) */
+@font-face {
+    font-family: qian;
+    src: url("./font/MAOKENSHIJINHEI-2.TTF");
+}
+
+/* 全局样式 */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'qian', sans-serif;
+}
+
+body h1 {
+    color: #282f59;
+}
+
+body p {
+    color: #7c7c7c;
+}
+
+body a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* 渐变颜色 */
+:root {
+    --jian_bian-1 : linear-gradient(to bottom right, rgb(107,107,255), blue);
+    --jian_bian-2 : linear-gradient(to bottom right, rgb(80,80,255), rgb(253,119,119)); 
+    --jian_bian-3 : linear-gradient(to bottom right, rgb(255,207,145), rgb(255,111,92)); 
+    --jian_bian-4 : linear-gradient(to bottom right, #2af598, #009efb); 
+}
+
+/* 头部样式 */
+header {
+    background-image: url("./images/beijing4.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.dao_hang_lan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.dao_hang_lan ul {
+    flex: 1;
+    text-align: right;
+}
+
+.dao_hang_lan ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.tou_xiang {
+    width: 50px;
+    height: 50px;
+}
+
+.an_niu {
+    padding: 10px 20px;
+    background: var(--jian_bian-3);
+    border-radius: 50px;
+}
+
+.an_niu:hover {
+    background: linear-gradient(to bottom right, rgb(255,111,92) ,rgb(255,207,145));
+}
+
+.hang {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.tou_bu_nei_rong, .ying_xiong_pu_pian {
+    flex-basis: 50%;
+    padding: 5rem;
+}
+
+.tou_bu_nei_rong h1 {
+    font-size: 7vmin;
+    margin-bottom: 30px;
+    margin-top: 7rem;
+    color: #272d4cdb;
+}
+
+.tou_bu_nei_rong p {
+    margin-bottom: 30px;
+}
+
+.liao_jie_geng_duo {
+    padding: 10px 20px;
+    border: 1px soild tomato;
+    border-radius: 50px;
+    color: tomato;
+    margin-right: 30px;    
+}
+
+.liao_jie_geng_duo:hover {
+    background: var(--jian_bian-3);
+    border: none;
+    color: whitesmoke;
+}
+
+.ying_xiong_tu_pian img {
+    width: 80px;
+    height: 80px;
+    margin-left: 80px;
+}
+
+/* 服务: services */
+.fu_wu {
+    margin-top: 80px;
+}
+
+.rong_qi {  
+    padding: 3rem;
+    display: flex;
+}
+
+.grid-wrapper , 
+.services-content {
+    flex-basis: 50%;
+}
+
+.grid-wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit minmax(250px, auto)); */
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+    padding: 2rem;
+}
+
+.grid-box {
+    height: 200px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.484);
+}
+
+.grid-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    animation: scaleup 6s ease-in-out infinite;
+}
+
+.grid-box h1 {
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.mobileapp {
+    background: var(--jian_bian-1);
+}
+
+.webdesign {
+    background: var(--jian_bian-2);
+    margin-top: 30px;
+}
+
+.marketing {
+    background: var(--jian_bian-3);
+}
+ 
+.branding {
+    background: var(--jian_bian-4);
+    margin-top: 30px;
+}
+
+.services-content {
+    padding: 3rem;
+    position: relative;
+}
+
+.services-content h1 {
+    font-size: 6vmin;
+    margin-bottom: 30px;
+}
+
+.services-content a {
+    padding-right: 6rem;
+    margin-bottom: 30px;
+}
+
+.yu_quan img {
+    position: absolute;
+    top: -10%;
+    left: -20%;
+    width: 650px;
+    z-index: -1;
+    animation: scaleup 6s ease-in-out infinite;
+}
+
+/* Number: hao_ma */
+.hao_ma {
+    margin-top: 100px;
+}
+
+.hao_ma .num-text {
+    font-size: 40px;
+    padding-left: 5rem;
+    padding-right: 50%;
+}
+
+.hao_ma p {
+    padding-left: 5rem;
+    padding-right: 50%;
+}
+
+.mockup-img {
+    flex-basis: 50%;
+}   
+
+.mockup-img img {
+    max-width: 100%;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.443);
+    border-radius: 10px;
+}
+
+.hpyclients {
+    background: var(--jian_bian-1);
+}
+
+.prjcompleted {
+    background: var(--jian_bian-2);
+}
+
+.runningprj {
+    background: var(--jian_bian-3);
+}
+
+.designs {
+    background: var(--jian_bian-4);
+}
+
+.hao_ma .rong_qi h2 {
+    color: whitesmoke;
+    font-weight: 100;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.hao_ma .rong_qi h2 {
+    font-size: 25px;
+}
+
+/* 悬停 */
+.hao_ma .grid-box {
+    transition: transform 0.75s ease-in-out;
+}
+
+.hao_ma .grid-box:hover {
+    transform: translateY(-20px);
+}
+
+/* 项目三: projects 3 */
+.projects {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 40px;
+}
+
+.projects-images {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
+
+.prj-img {
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prj-img .img1 {
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.632);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.prj-img:hover .details {
+    transform: scaleX(1);
+}
+
+.details h1,h2,img {
+    color: whitesmoke;
+}
+
+.details img{
+    width: 20px;
+    height: 20px;
+}
+
+/* 团队: team */
+.team {
+    margin-top: 80px;
+}
+
+.team-h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.part3-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , auto));
+    background: var(--jian_bian-2);
+    padding: 4rem;  
+    gap: 2em;
+    padding: 2rem;
+}
+
+.team-men {
+    background: rgb(255, 255, 255);
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.team-men:hover {
+    transform: translateY(-20px);
+}
+
+.team-men h1 {
+    font-size: 32px;
+}
+
+.team-men h2 {
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.part3-tu_biao {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+.team-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.part3-tu_biao:hover {
+    transform: rotateY(360deg);
+    transition: transform 1.5s ease
+}
+
+/* 客户评价: Testimonials */
+.pingjia-gird-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , auto));
+    padding: 4rem;  
+    gap: 2em;
+    padding: 3rem;
+}
+
+.testimonials {
+    margin-top: 80px;
+}
+
+.testimonials-h1 {
+    font-size: 40px;
+    padding-left: 5rem;
+}
+
+.testimonials-p {
+    padding-left: 5rem;
+    padding-right: 50%;
+}
+
+.review {
+    min-height: 400px;
+}
+
+.review .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pinglun_touxiang {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.pinglun_dingzi {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.review p {
+    padding-left: 80px;
+    padding-right: 40px;
+}
+
+/* 动画 */
+@keyframes scaleup {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+

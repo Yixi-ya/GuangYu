@@ -3,130 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GanYingHua~</title>
+    <!-- 字体 外部链接 -->
+    <!-- <link    -->
+        <!-- rel="stylesheet" -->
+        <!-- href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" -->
+    <!-- /> -->
+    <!-- 自定义 css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>（待取名）</title>
 </head>
 <body>
-    <div class="card-head">
-        <h1 class="head-1">小栖的个人小窝</h1>
-    </div>
-    <div class="line"></div>
-    <div class="card-1">
-        <h3 class="head-3">恪守</h3>
-        <p>不乱于心，不困于情；不畏将来，不念过往</p>
-        <p class="need-line-breaks">如此，安好！</p>
-        <br />
-        <p>深谋若谷，深交若水；深明大义，深悉小节</p>
-        <p class="need-line-breaks">已然，静舒！</p>
-        <br />
-        <p>善宽以怀，善感以恩；善博以浪，善精以业</p>
-        <p class="need-line-breaks">这般，最佳！</p>
-        <br />
-        <p>勿感于时，勿伤于怀；勿耽美色，勿沉虚妄</p>
-        <p class="need-line-breaks">从今，进取！</p>
-        <br />
-        <p>无愧于天，无愧于地；无怍于人，无惧于鬼</p>
-        <p class="need-line-breaks">这样，人生！</p>
-        <br />
-        <a href="https://zhuanlan.zhihu.com/p/67481505">———丰子恺《不宠无惊过一生》</a>
-    </div>
-    <div class="line"></div>
-    <div class="card-2">
-        <h3 class="head-3">web学习</h3>
-        <p>1. alt + shift + ⬆ or ⬇: 将当前代码复制到上或下一行</p>
-        <br />
-        <p>2. alt +鼠标左键: 添加一个新光标</p>
-        <br />
-        <p>3. ctrl + f: 查找内容</p>
-        <br />
-        <p>4. 查看全部快捷键: 文件-首选项-键盘快捷方式</p>
-        <br />
-        <p>5. ctrl + d: 选择下一个相同的字符</p>
-    </div>
-    <div class="line"></div>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: auto;
-            height: 1500px;    
-            background-image: linear-gradient(60deg, #d16ba5 0%, #86a8e7 46%, #5ffbf1 100%);
-        }
+    <header>
+        <!-- nav : 导航 -->
+        <nav class="dao_hang_lan">
+            <img src="./images/tou_xiang.png" alt="头像" class="tou_xiang"/>
+            <ul class="dao_hang_lie">
+                <!-- <a>中的 href="#" 为链接到当前页面的顶部 -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">资助</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a class="an_niu" href="#">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="hang">
+            <div class="tou_bu_nei_rong">
+                <h1>标题-文本占位符_1</h1>
+                <p>内容-文本占位符_2</p>
+                <a href="#" class="liao_jie_geng_duo">了解更多</a>
+                <a href="#" class="an_niu">联系我们</a>
+            </div>
+            <div class="ying_xiong_tu_pian">
+                <img src="./images/_com.apple.pasteboard.bwlfdv.png" alt="tu_pian">
+            </div>
+        </div>
+    </header>
 
-        .card-head{
-            width: 100%;
-            height: 90px;
-            background-color: rgba(255, 255, 255, 0.555);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 10px #deddddf3;
-        }
-        
-        .head-1{
-            text-align: center;
-            color: #ffffffcf;
-            letter-spacing: 4px;
-        }
-        
-        .need-line-breaks{
-            display: flex;
-            align-self: start;
-        }
+    <!-- 服务: serices -->
+    <section class="fu_wu">
+        <!-- 容器: container -->
+        <div class="rong_qi">
+            <!-- 网格包装纸: grid-wrapper -->
+            <div class="grid-wrapper">
+                <!-- 网格框: grid-box -->
+                <!-- 移动应用: mobile app -->
+                <div class="grid-box mobileapp">
+                    <img src="./images/tu_biao_shouji.png" alt="图片">
+                    <h1>移动应用</h1>
+                </div>
+                <!-- 网页设计: web design -->
+                <div class="grid-box webdesign">
+                    <img src="./images/tu_biao_dayinji.png" alt="图片">
+                    <h1>网页设计</h1>
+                </div>
+                <!-- 营销 -->
+                <div class="grid-box marketing">
+                    <img src="./images/tu_biao_diannao.png" alt="图片">
+                    <h1>营销</h1>
+                </div>
+                <!-- 品牌 -->
+                <div class="grid-box branding">
+                    <img src="./images/tu_biao_pingban.png" alt="图片">
+                    <h1>品牌</h1>
+                </div>
+            </div> 
+            <!-- 服务内容: services-content -->
+            <div class="services-content">
+                <div class="yu_quan">
+                    <img src="./images/yu_quan.png" alt="图片">
+                </div>
+                <h1>我们最优质的服务</h1>
+                <p>文字待放区*1</p>
+                <p>文字待放区*2</p>
+                <a href="#" class="liao_jie_geng_duo">了解更多</a>
+            </div>
+        </div>
+    </section>
 
-        .line{
-            margin: 40px;
-            border-top: 2px solid rgba(255, 255, 255, 0.555);
-            width: 80%;
-        }
+    <!-- Numbers: hao_ma -->
+    <section class="hao_ma">
+        <h1 class="num-text">我们的待客风貌</h1>
+        <p>文字待放区*1 -占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符--占位符-</p>
+        <div class="rong_qi">
+            <div class="grid-wrapper">
+                <!-- 满意客户 -->
+                <div class="grid-box hpyclients">
+                    <h1>2500+</h1>
+                    <h2>满意的客户</h2>
+                </div>
+                <!-- 完成项目 -->
+                <div class="grid-box prjcompleted">
+                    <h1>750+</h1>
+                    <h2>完成的项目</h2>
+                </div>
+                <!-- 正在运行项目 -->
+                <div class="grid-box runningprj">
+                    <h1>500+</h1>
+                    <h2>正在运行的项目</h2>
+                </div>
+                <!-- 设计师 -->
+                <div class="grid-box designs">
+                    <h1>700+</h1>
+                    <h2>我们的设计师</h2>
+                </div>
+            </div>
+            <div class="mockup-img">
+                <img src="./images/qian_se_bei_jing.png">
+            </div>
+        </div>
+    </section>
 
-        .card-1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 330px;
-            border: 10px;
-            padding: 30px 15px 50px 15px;
-            border-radius: 15px 15px 15px 15px;
-            background-color: rgba(255, 255, 255, 0);
-            backdrop-filter: blur(200px);
-            box-shadow: 0 0 8px #ffffff88;
-        }
-        .card-2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            border: 10px;
-            padding: 30px 15px 50px 15px;
-            border-radius: 15px 15px 15px 15px;
-            background-color: rgba(255, 255, 255, 0);
-            backdrop-filter: blur(200px);
-            box-shadow: 0 0 8px #ffffff88;
-        }
-    
-        .head-3 {
-            margin: 20px;
-            padding: 0px;
-            color: rgb(255, 255, 255);
-            letter-spacing: 10px;
-        }
-        
-        p {
-            margin: 0;
-            color: rgb(255, 255, 255);
-            letter-spacing: 1px;
-            font-size: 12px;
-        }
-    
-        a{
-            display: flex;
-            align-self: flex-end;
-            margin: 0;
-            color: rgb(255, 255, 255);
-            letter-spacing: 1px;
-            font-size: 12px;
-        }
-    </style>
+    <!-- 项目:projects -->
+    <section class="projects">
+        <h1>我们最新的项目</h1>
+        <div class="projects-images">
+            <div class="prj-img">
+                <img class="img1" src="./images/part3-1.png" alt="图片">
+                <div class="details">
+                    <h2>创意</h2>
+                    <h1>网页开发</h1>
+                    <img src="./images/part-3-jian_tou.png" alt="图片">
+                </div>
+            </div>
+            <div class="prj-img">
+                <img src="./images/part3-2.png" alt="图片">
+                <div class="details">
+                    <h2>创意</h2>
+                    <h1>网页开发</h1>
+                    <img src="./images/part-3-jian_tou.png" alt="图片">
+                </div>
+            </div>
+            <div class="prj-img">
+                <img src="./images/part3-3.png" alt="图片">
+                <div class="details">
+                    <h2>创意</h2>
+                    <h1>网页开发</h1>
+                    <img src="./images/part-3-jian_tou.png" alt="图片">
+                </div>
+            </div>
+            <div class="prj-img">
+                <img src="./images/part3-4.png" alt="图片">
+                <div class="details">
+                    <h2>创意</h2>
+                    <h1>网页开发</h1>
+                    <img src="./images/part-3-jian_tou.png" alt="图片">
+                </div>
+            </div>
+            <div class="prj-img">
+                <img src="./images/part3-5.png" alt="图片">
+                <div class="details">
+                    <h2>创意</h2>
+                    <h1>网页开发</h1>
+                    <img src="./images/part-3-jian_tou.png" alt="图片">
+                </div>
+            </div>
+            <div class="prj-img">
+                <img src="./images/part3-6.png" alt="图片">
+                <div class="details">
+                    <h2>创意</h2>
+                    <h1>网页开发</h1>
+                    <img src="./images/part-3-jian_tou.png" alt="图片">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 团队: team -->
+    <section class="team">
+        <h1 class="team-h1">认识我们的团队</h1>
+        <div class="part3-grid-wrapper">
+            <div class="team-men">
+                <img class="team-img" src="./images/team-men-1.jpg">
+                <h1>No.1</h1>
+                <h2>职位-文本占用</h2>
+                <div class="social-profiles">
+                    <img class="part3-tu_biao" src="./images/part-3-wei-xin.png">
+                    <img class="part3-tu_biao" src="./images/part-3-QQ.png">
+                </div>
+            </div>
+            <div class="team-men">
+                <img class="team-img" src="./images/team-men-2.jpg">
+                <h1>绿色小鹿</h1>
+                <h2>职位-文本占用</h2>
+                <div class="social-profiles">
+                    <img class="part3-tu_biao" src="./images/part-3-wei-xin.png">
+                    <img class="part3-tu_biao" src="./images/part-3-QQ.png">
+                </div>
+            </div>
+            <div class="team-men">
+                <img class="team-img" src="./images/team-men-3.jpg">
+                <h1>丁新星</h1>
+                <h2>职位-文本占用</h2>
+                <div class="social-profiles">
+                    <img class="part3-tu_biao" src="./images/part-3-wei-xin.png">
+                    <img class="part3-tu_biao" src="./images/part-3-QQ.png">
+                </div>
+            </div>
+            <div class="team-men">
+                <img class="team-img" src="./images/team-men-4.jpg">
+                <h1>诗篇~</h1>
+                <h2>职位-文本占用</h2>
+                <div class="social-profiles">
+                    <img class="part3-tu_biao" src="./images/part-3-wei-xin.png">
+                    <img class="part3-tu_biao" src="./images/part-3-QQ.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 客户评价: Testimonials -->
+    <section class="testimonials">
+        <h1 class="testimonials-h1">我们的客户评价</h1>
+        <p class="testimonials-p">评价-文本占位符</p>
+        <div class="pingjia-gird-wrapper">
+            <!-- 评价: review -->
+            <div class="review">
+                <img class="pinglun_dingzi" src="./images/ping_lun-ding_zi.png">
+                <!-- 个人资料: profile -->
+                <div class="profile">
+                    <img class="pinglun_touxiang" src="./images/team-men-4.jpg">
+                    <h1>诗篇~</h1>
+                </div>
+                <p>
+                    评论-长_文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                    -文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                    -文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                </p>
+            </div>
+            <div class="review">
+                <img class="pinglun_dingzi" src="./images/ping_lun-ding_zi.png">
+                <!-- 个人资料: profile -->
+                <div class="profile">
+                    <img class="pinglun_touxiang" src="./images/team-men-3.jpg">
+                    <h1>丁新星</h1>
+                </div>
+                <p>
+                    评论-长_文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                    -文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                    -文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                </p>
+            </div>
+            <div class="review">
+                <img class="pinglun_dingzi" src="./images/ping_lun-ding_zi.png">
+                <!-- 个人资料: profile -->
+                <div class="profile">
+                    <img class="pinglun_touxiang" src="./images/team-men-2.jpg">
+                    <h1>绿色小鹿</h1>
+                </div>
+                <p>
+                    评论-长_文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                    -文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                    -文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符-文本占位符
+                </p>
+            </div>
+            
+        </div>
+    </section>
 </body>
 </html>
