@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4765553 */
+  src: url('iconfont.woff2?t=1732942790636') format('woff2'),
+       url('iconfont.woff?t=1732942790636') format('woff'),
+       url('iconfont.ttf?t=1732942790636') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangjiantou1:before {
+  content: "\eb6d";
+}
+

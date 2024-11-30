@@ -38,7 +38,7 @@ body a {
 
 /* 头部样式 */
 header {
-    background-image: url("./images/beijing4.png");
+    background-image: url("./images/beijing-3.png");
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -340,8 +340,7 @@ header {
 .part3-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px , auto));
-    background: var(--jian_bian-2);
-    padding: 4rem;  
+    background: var(--jian_bian-2); 
     gap: 2em;
     padding: 2rem;
 }
@@ -358,7 +357,8 @@ header {
 }
 
 .team-men:hover {
-    transform: translateY(-20px);
+    /* aos动画 与 hover 冲突 */
+    transform: translateY(-20px) !important;
 }
 
 .team-men h1 {
@@ -388,10 +388,9 @@ header {
 }
 
 /* 客户评价: Testimonials */
-.pingjia-gird-wrapper {
+.pingjia-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px , auto));
-    padding: 4rem;  
     gap: 2em;
     padding: 3rem;
 }
@@ -436,6 +435,201 @@ header {
 .review p {
     padding-left: 80px;
     padding-right: 40px;
+}
+
+/* 博客: blogs part-4 */
+.blog_grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , auto));
+    padding: 4rem;  
+    gap: 2em;
+}
+
+.blogs {
+    margin-top: 80px;
+}
+
+.blog {
+    min-height: 400px;
+}
+
+.blog h1 {
+    margin: 20px 0;
+    font-size: 23px;
+}
+
+.blog p {
+    margin-bottom: 2%;
+}
+
+.blog a {
+    color: rgb(65, 65, 65);
+}
+
+.blog img {
+    width: 100%;
+    max-height: 300px;
+}
+
+.blog-h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* 招募: call to action */
+.kai-shi {
+    margin-top: 60px;
+    padding: 1rem; 
+}
+
+.ks_kuang-kuang {  
+    display: flex;
+    padding: 2rem;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+    margin: 10px auto;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.ks_an-niu {
+    padding: 12px 30px;
+    color: whitesmoke;
+    background: var(--jian_bian-2);
+    border: none;
+    font-size: 15px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 5px rgba(218, 172, 224, 0.852);
+    cursor: pointer;
+    outline: none;
+}
+
+.ks_an-niu:hover {
+    background: var(--jian_bian-4);
+}
+
+/* 页脚: footer */
+.fo_grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , auto));
+    padding: 4rem;  
+    gap: 2em;   
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.lie-4 {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer1 h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.footer img{
+    margin: 50px 20px;
+}
+
+.footer2 h4, .footer3 h4, .footer4 h4{
+    color: gray;
+    font-weight: 400;
+}
+/* 备案信息 */
+.heng-xian {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+.bei-an p, .bei-an a{
+    margin: 3px;
+    font-size: 10px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+/* 返回顶部 */
+#dingbu{
+    color: white;
+    background: tomato;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+/* 切换主题: theme toggle */
+.theme {
+    position: absolute;
+    top: 30px;
+    left: 30%;
+}
+.label {
+    width: 50px;
+    height: 20px;
+    background: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.label .ball{
+    width: 15px;
+    height: 15px;
+    background: #282f59;
+    border-radius: 50%;
+    margin: 5px;
+    transition: transform 0.5s;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked ~ .label {
+    background: #282f59;
+}
+
+.checkbox:checked ~ .label .ball{
+    background-color: whitesmoke;
+    transform: translateX(25px);
+}
+
+/* 暗黑模式 */
+body.dark {
+    background: #282f59;
+}
+
+body.dark p {
+    color: #cbcdda;
+}
+
+body.dark h1 {
+    color: whitesmoke;
+}
+
+body.dark .part3-grid-wrapper h1 {
+    color: #282f59;
+}
+
+body.dark .footer h4 {
+    color: #cbcdda;
+}
+
+body.dark .bei-an {
+    color: #cbcdda;
 }
 
 /* 动画 */
